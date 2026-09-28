@@ -5,6 +5,8 @@ import { Header } from './components/layout/Header'
 import { DEMO_NOW, mockOrders } from './data/mockOrders'
 import { deriveTrackingView } from './lib/deriveTrackingView'
 import type { ScenarioId } from './types/order'
+import { StatusHero } from './components/tracking/StatusHero'
+
 
 export default function App() {
   const [scenario, setScenario] = useState<ScenarioId>('on-track')
@@ -16,7 +18,7 @@ export default function App() {
       <Header orderId={order.id} />
       <ScenarioSwitcher value={scenario} onChange={setScenario} />
       <main className="space-y-4 p-4">
-        <p>{view.headline}</p>
+       <StatusHero view={view} />
       </main>
     </AppShell>
   )

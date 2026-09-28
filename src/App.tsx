@@ -6,6 +6,7 @@ import { DEMO_NOW, mockOrders } from './data/mockOrders'
 import { deriveTrackingView } from './lib/deriveTrackingView'
 import type { ScenarioId } from './types/order'
 import { StatusHero } from './components/tracking/StatusHero'
+import { Timeline } from './components/tracking/Timeline'
 
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
       <ScenarioSwitcher value={scenario} onChange={setScenario} />
       <main className="space-y-4 p-4">
        <StatusHero view={view} />
+       <Timeline steps={view.steps} tone={view.tone} />
       </main>
     </AppShell>
   )

@@ -1,0 +1,6 @@
+Tool: Chatgpt 
+---
+1. Imagine you are a software developer and this is a task you had assigned. You have to ccoplete this task within one hour. You just need to frontend and you could use the static data. Now analyze the whole task and explain that what approach you would take to complete this task within the given time. Explain all the steps, explain the technologies
+2. Provide me the tech stack setup link at once
+3. provide me the folder structure
+4. Explain me this task clearly. I am not clear about it. 
